@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecla Pressionada</title>
+</head>
+<body>
+    <h1>Eventos do Teclado</h1>
+    <h2>Com evento <b>ONKEYDOWN</b></h2>
+    
+    <p>Pressione uma tecla no campo de entrada de dados abaixo</p>
+    
+    <input type="text" size="40" onkeydown="myFunction(event)">
+    
+    <p>A propriedade <b>EVENT KEY</b> retorna o nome da tecla pressionada</p>
+    
+    <p id="demo"></p>
+    
+    <script>
+       function myFunction(event) 
+       {
+          let key = event.key;
+          document.getElementById("demo").innerHTML = "The key was: " + key;
+       }
+    </script>        
+
+</body>
+</html>
+
